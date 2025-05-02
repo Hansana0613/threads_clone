@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:threads_clone/screens/authentication/login_screen.dart';
 import 'package:threads_clone/utils/colors.dart';
 import 'package:threads_clone/widgets/button.dart';
 import 'package:threads_clone/widgets/text_field.dart';
@@ -109,7 +110,14 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       style: TextStyle(color: Colors.white),
                     ),
                     TextButton(
-                      onPressed: () { },
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const LoginScreen(),
+                          ),
+                        );
+                      },
                       child: const Text(
                         "Log in",
                         style: TextStyle(color: Colors.white),
