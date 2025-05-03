@@ -42,10 +42,11 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       title: "Threads Clone",
-      home: const ResponsiveLayout(
-        mobileScreenLayout: MobileScreenLayout(),
-        webScreenLayout: WebScreenLayout(),
-      ),
+      // home: const ResponsiveLayout(
+      //   mobileScreenLayout: MobileScreenLayout(),
+      //   webScreenLayout: WebScreenLayout(),
+      // ),
+      home: const RegisterScreen(),
     );
   }
 }
